@@ -1,6 +1,5 @@
 <template>
 
-<!-- Related Products Section End -->
     <div class="related-products spad">
         <div class="container">
             <div class="row">
@@ -105,7 +104,6 @@
             </div>
         </div>
     </div>
-    <!-- Related Products Section End -->
 
 </template>
 

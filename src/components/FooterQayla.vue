@@ -1,6 +1,5 @@
 <template>
 
-<!-- Footer Section Begin -->
     <footer class="footer-section">
         <div class="container">
             <div class="row">
@@ -15,21 +14,21 @@
                             <li>Email: qayla.id@gmail.com</li>
                         </ul>
                         <div class="footer-social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <a href="https://www.facebook.com/byqayla_id-102270318186491/?ref=page_internal"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/by.qayla_id/"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-1">
                     <div class="footer-widget text-left">
-                        <h5>Information</h5>
+                        <h5>Informasi</h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Checkout</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Serivius</a></li>
+                            <li>
+                                <router-link to="/tentangkami">Tentang Kami</router-link>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -37,10 +36,20 @@
                     <div class="footer-widget text-left">
                         <h5>My Account</h5>
                         <ul>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Shopping Cart</a></li>
-                            <li><a href="#">Shop</a></li>
+                            <li>
+                                <a href="#">My Account</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <router-link to="/keranjang">
+                                    <a @click="saveKeranjang(productDetails.id, productDetails.name, productDetails.price, productDetails.galleries[0].photo)" href="#">Keranjang Belanja</a>
+                                </router-link>
+                            </li>
+                            <li>
+                                <a href="#">Shop</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -59,7 +68,6 @@
             </div>
         </div>
     </footer>
-    <!-- Footer Section End -->
 
 </template>
 

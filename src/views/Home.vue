@@ -4,6 +4,7 @@
       <HeaderQayla/>
       <HeroQayla/>
       <ProductQayla/>
+      <ProductQayla2/>
       <InstaQayla/>
       <FooterQayla/>
 
@@ -16,6 +17,7 @@
 import HeaderQayla from "@/components/HeaderQayla.vue";
 import HeroQayla from "@/components/HeroQayla.vue";
 import ProductQayla from "@/components/ProductQayla.vue";
+import ProductQayla2 from "@/components/ProductQayla2.vue";
 import InstaQayla from "@/components/InstaQayla.vue";
 import FooterQayla from "@/components/FooterQayla.vue";
 
@@ -26,6 +28,7 @@ export default {
         HeaderQayla,
         HeroQayla,
         ProductQayla,
+        ProductQayla2,
         InstaQayla,
         FooterQayla
   }
